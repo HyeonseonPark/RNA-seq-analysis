@@ -82,5 +82,3 @@ project/
 - `edgeR.*/diffExpr.P0.001_C1.*.subset` - 필터링된 유의한 유전자들
 - `clusters_fixed_P_30/subcluster_*.matrix` - 발현 패턴별 유전자 클러스터
 
-
-```
