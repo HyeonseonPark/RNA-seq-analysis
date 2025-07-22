@@ -22,7 +22,7 @@
 | **04** | Alignment.sh | `*_good_1.fastq`, `참조유전체` | `Con1~3_sorted.bam`, `Cd1~3_sorted.bam`, `Con1~Cd3/gene_abund.tab` |
 | **05** | Matrix.sh | `*/gene_abund.tab` | `gene_count_matrix.csv`, `genes.TPM.matrix` |
 | **06** | Sample_QC.sh | `genes.counts.matrix`, `samples.file` | `*.pdf` (PCA, 상관관계) |
-| **07** | DEG_analysis.sh | `genes.counts.matrix`, `samples.file` | `edgeR.*/` (차등발현 결과, 클러스터) |
+| **07** | DEG_analysis.sh | `genes.counts.matrix,TMM.EXPR.matrix`, `samples.file` | `edgeR.*/` (차등발현 결과, 클러스터) |
 
 ---
 
@@ -75,6 +75,7 @@ project/
 
 ### 발현 데이터  
 - `gene_count_matrix.csv` - 통계분석용 count 행렬
+- 'TMM.EXPR.matrix' - DEG 분석용 행렬
 - `genes.TPM.matrix` - 비교용 TPM 행렬
 
 ### 차등발현 분석
